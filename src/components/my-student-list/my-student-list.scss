@@ -1,0 +1,19 @@
+my-student-list {
+  .studentName {
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  .star {
+    font-size: 5rem;
+    padding-left: 20px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+  }
+  .removeStar {
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fdd;
+    cursor: pointer;
+  }
+}

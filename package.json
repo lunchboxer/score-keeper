@@ -1,0 +1,25 @@
+{
+  "name": "Score-keeper",
+  "private": true,
+  "version": "0.1.0",
+  "description": "an interactive scoreboard for the classroom",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "@stencil/router": "latest"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  },
+  "author": "James Smith",
+  "license": "MIT"
+}

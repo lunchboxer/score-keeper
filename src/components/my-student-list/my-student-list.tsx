@@ -36,9 +36,9 @@ export class MyStudentList {
   @Method() removeStarHandler(ev) {
     let studentId = ev.target.getAttribute('data-id')
     let studentIdString = 'student' + studentId
-    let studentStarsDiv = this.studentListEl.getElementsByClassName(studentIdString + " stars")[0]
-    if (studentStarsDiv.children.length > 0) {
-      studentStarsDiv.removeChild(studentStarsDiv.lastChild)
+    let studentStars = this.studentListEl.getElementsByClassName(studentIdString + " stars")[0]
+    if (studentStars.children.length > 0) {
+      studentStars.removeChild(studentStars.lastChild)
     }
     let fart = new Audio('assets/quick-fart.wav')
     fart.play()
@@ -47,21 +47,27 @@ export class MyStudentList {
   render() {
     return ([
       <h2>{this.selectedGroup}</h2>,
-      <div>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Stars</th>
+        </thead>
+        <tbody>
         {this.students[this.selectedGroup].map((student, id) => (
-          <div class={"row " + "student" + id }>
+          <tr class={"student" + id }>
 
-            <div class="column column-20">
+            <td>
               <span onClick={this.addStarHandler.bind(this)} class="studentName" data-id={id}>{student}</span>
               <span onClick={this.removeStarHandler.bind(this)} class="removeStar" data-id={id}>x</span>
-            </div>
+            </td>
 
-            <div  class={"student" + id + " stars column"}>
-            </div>
+            <td class={"student" + id + " stars"}>
+            </td>
 
-          </div>
+          </tr>
           ))}
-      </div>
+          </tbody>
+      </table>
     ]);
   }
 }

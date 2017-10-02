@@ -10,6 +10,8 @@ quick-fart.wav is derived from http://soundbible.com/2150-Common-Fart.html CC-BY
 
 ## Make it go
 
+copy the sound files to the www directory.
+
 you'll want to add normalize and milligram css files to src/assets/dist/
 
 run:

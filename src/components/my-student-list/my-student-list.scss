@@ -2,7 +2,7 @@ my-student-list {
   $break-small: "screen and (min-width:40rem)";
   .studentName {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 3rem;
     @media #{$break-small} { font-size: 5rem; }
   }
   .removeStar {
@@ -10,5 +10,9 @@ my-student-list {
     font-size: 4rem;
     color: #fdd;
     cursor: pointer;
+  }
+  tr td:first-child{
+    width:1%;
+    white-space:nowrap;
   }
 }

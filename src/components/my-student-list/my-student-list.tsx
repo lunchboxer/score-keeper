@@ -39,9 +39,10 @@ export class MyStudentList {
     let studentStars = this.studentListEl.getElementsByClassName(studentIdString + " stars")[0]
     if (studentStars.children.length > 0) {
       studentStars.removeChild(studentStars.lastChild)
+      let fart = new Audio('assets/quick-fart.wav')
+      fart.play()
     }
-    let fart = new Audio('assets/quick-fart.wav')
-    fart.play()
+
   }
 
   render() {
@@ -58,7 +59,7 @@ export class MyStudentList {
 
             <td>
               <span onClick={this.addStarHandler.bind(this)} class="studentName" data-id={id}>{student}</span>
-              <span onClick={this.removeStarHandler.bind(this)} class="removeStar" data-id={id}>x</span>
+              <span onClick={this.removeStarHandler.bind(this)} class="removeStar" data-id={id}>&times;</span>
             </td>
 
             <td class={"student" + id + " stars"}>

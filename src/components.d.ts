@@ -35,6 +35,61 @@ declare global {
   }
 }
 
+import { MyMain as MyMain } from './components/my-main/my-main';
+
+interface HTMLMyMainElement extends MyMain, HTMLElement {
+}
+declare var HTMLMyMainElement: {
+  prototype: HTMLMyMainElement;
+  new (): HTMLMyMainElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "my-main": HTMLMyMainElement;
+  }
+  interface ElementTagNameMap {
+      "my-main": HTMLMyMainElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "my-main": JSXElements.MyMainAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface MyMainAttributes extends HTMLAttributes {
+        
+      }
+  }
+}
+
+import { MyStar as MyStar } from './components/my-star/my-star';
+
+interface HTMLMyStarElement extends MyStar, HTMLElement {
+}
+declare var HTMLMyStarElement: {
+  prototype: HTMLMyStarElement;
+  new (): HTMLMyStarElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "my-star": HTMLMyStarElement;
+  }
+  interface ElementTagNameMap {
+      "my-star": HTMLMyStarElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "my-star": JSXElements.MyStarAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface MyStarAttributes extends HTMLAttributes {
+        
+          randomColor?: any
+      }
+  }
+}
+
 import { MyStudentList as MyStudentList } from './components/my-student-list/my-student-list';
 
 interface HTMLMyStudentListElement extends MyStudentList, HTMLElement {
@@ -60,7 +115,9 @@ declare global {
         
           addStarHandler?: any,
           removeStarHandler?: any,
-          selectedGroup?: any
+          selectedGroup?: any,
+          yoy?: any,
+          furt?: any
       }
   }
 }

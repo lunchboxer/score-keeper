@@ -1,6 +1,6 @@
 exports.config = {
   bundles: [
-    { components: ['my-groups', 'my-student-list'] }
+    { components: ['my-main', 'my-groups', 'my-student-list', 'my-star'] }
   ],
   collections: [
     { name: '@stencil/router' }

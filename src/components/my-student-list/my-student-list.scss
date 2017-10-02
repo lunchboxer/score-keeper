@@ -1,18 +1,13 @@
 my-student-list {
+  $break-small: "screen and (min-width:40rem)";
   .studentName {
-    font-size: 5rem;
     cursor: pointer;
-  }
-  .star {
-    font-size: 5rem;
-    padding-left: 20px;
-    font-weight: bold;
-    color: blue;
-    cursor: pointer;
+    font-size: 2rem;
+    @media #{$break-small} { font-size: 5rem; }
   }
   .removeStar {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #fdd;
     cursor: pointer;
   }

@@ -1,6 +1,6 @@
 # Score Keeper
 
-v0.1
+v0.2
 
 A stencil-based scoreboard app for the classroom. This first iteration is
 extremely simple

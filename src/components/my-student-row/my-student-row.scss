@@ -1,0 +1,15 @@
+my-student-row {
+  $break-small: "screen and (min-width:40rem)";
+  .studentName {
+    cursor: pointer;
+    font-size: 3rem;
+    @media #{$break-small} { font-size: 5rem; }
+  }
+  .removeStar {
+    padding: 1rem;
+    font-size: 4rem;
+    color: #633;
+    cursor: pointer;
+  }
+  
+}

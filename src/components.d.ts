@@ -30,7 +30,10 @@ declare global {
       export interface MyGroupsAttributes extends HTMLAttributes {
         
           setGroupHandler?: any,
-          groupResetHandler?: any
+          groupResetHandler?: any,
+          getStudentsFromServer?: any,
+          renderGroups?: any,
+          apiRootUrl?: any
       }
   }
 }
@@ -113,9 +116,40 @@ declare global {
   namespace JSXElements {
       export interface MyStudentListAttributes extends HTMLAttributes {
         
+          studentGroup?: any,
+          yoy?: any,
+          furt?: any
+      }
+  }
+}
+
+import { MyStudentRow as MyStudentRow } from './components/my-student-row/my-student-row';
+
+interface HTMLMyStudentRowElement extends MyStudentRow, HTMLElement {
+}
+declare var HTMLMyStudentRowElement: {
+  prototype: HTMLMyStudentRowElement;
+  new (): HTMLMyStudentRowElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "my-student-row": HTMLMyStudentRowElement;
+  }
+  interface ElementTagNameMap {
+      "my-student-row": HTMLMyStudentRowElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "my-student-row": JSXElements.MyStudentRowAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface MyStudentRowAttributes extends HTMLAttributes {
+        
           addStarHandler?: any,
+          buildScoresArray?: any,
           removeStarHandler?: any,
-          selectedGroup?: any,
+          student?: any,
           yoy?: any,
           furt?: any
       }

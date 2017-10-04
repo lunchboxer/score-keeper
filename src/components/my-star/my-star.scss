@@ -10,9 +10,22 @@ my-star {
   svg.star {
     width: 1.1em;
     @media screen and (min-width: $break-small) {
-      padding-left: 1em;
+      padding-right: 1em;
       width: 5em;
       animation: dropin 0.2s 1 ;
     }
+
+  }
+  .color0 {
+    fill: #00aeff;
+  }
+  .color1 {
+    fill: #d000ff;
+  }
+  .color2 {
+    fill: #ff5100;
+  }
+  .color3 {
+    fill: #2fff00;
   }
 }

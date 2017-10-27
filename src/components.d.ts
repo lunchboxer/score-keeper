@@ -28,12 +28,14 @@ declare global {
   }
   namespace JSXElements {
       export interface MyGroupsAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
           setGroupHandler?: any,
           groupResetHandler?: any,
           getStudentsFromServer?: any,
           renderGroups?: any,
-          apiRootUrl?: any
+          apiRootUrl?: string
       }
   }
 }
@@ -60,6 +62,8 @@ declare global {
   }
   namespace JSXElements {
       export interface MyMainAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
       }
   }
@@ -87,6 +91,8 @@ declare global {
   }
   namespace JSXElements {
       export interface MyStarAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
           randomColor?: any
       }
@@ -115,6 +121,8 @@ declare global {
   }
   namespace JSXElements {
       export interface MyStudentListAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
           studentGroup?: any,
           yoy?: any,
@@ -145,6 +153,8 @@ declare global {
   }
   namespace JSXElements {
       export interface MyStudentRowAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
         
           addStarHandler?: any,
           buildScoresArray?: any,

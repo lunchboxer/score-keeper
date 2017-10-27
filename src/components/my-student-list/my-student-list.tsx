@@ -20,7 +20,7 @@ export class MyStudentList {
     return ([
       <h2>{this.studentGroup.name}</h2>,
       <table>
-        {this.studentGroup.student.map(student => (
+      {this.studentGroup.students.map(student => (
           <my-student-row student={student}></my-student-row>
         ))}
       </table>

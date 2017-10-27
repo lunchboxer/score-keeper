@@ -11,5 +11,9 @@ my-student-row {
     color: #633;
     cursor: pointer;
   }
-  
+  .score {
+    font-size: 3rem;
+    @media #{$break-small} { font-size: 5rem; }
+  }
+
 }

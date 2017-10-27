@@ -1,4 +1,8 @@
 my-student-list {
+  td {
+    padding: 0;
+    margin: 0;
+  }
   tr td:first-child{
     width:1%;
     white-space:nowrap;

@@ -3,7 +3,8 @@ my-student-row {
   .studentName {
     cursor: pointer;
     font-size: 3rem;
-    @media #{$break-small} { font-size: 5rem; }
+    font-weight: bold;
+    @media #{$break-small} { font-size: 6rem; }
   }
   .removeStar {
     padding: 1rem;

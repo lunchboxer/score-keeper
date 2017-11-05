@@ -18,7 +18,7 @@ export class MyStudentList {
   render() {
 
     return ([
-      <h2>{this.studentGroup.name}</h2>,
+      <h3>{this.studentGroup.name}</h3>,
       <table>
       {this.studentGroup.students.map(student => (
           <my-student-row student={student}></my-student-row>

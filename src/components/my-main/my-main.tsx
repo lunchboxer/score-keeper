@@ -12,7 +12,7 @@ export class MyMain {
   render() {
     return(
       <div class="container">
-        <h1>Score-keeper</h1>
+        <h2>Score-keeper</h2>
         <my-groups></ my-groups>
       </div>
     )

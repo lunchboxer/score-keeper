@@ -103,7 +103,7 @@ componentWillLoad() {
 
       return (
         <div>
-          <h2>Choose a class</h2>
+          <h3>Choose a class</h3>
           <ul>
             {this.renderGroups(this.groups)}
           </ul>

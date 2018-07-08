@@ -1,20 +1,17 @@
-import { Component } from '@stencil/core';
-
+import { Component } from "@stencil/core";
+import "@stencil/router";
 
 @Component({
-  tag: 'my-main',
-  styleUrl: 'my-main.scss'
+  tag: "my-main",
+  styleUrl: "my-main.scss"
 })
-
-
 export class MyMain {
-
   render() {
-    return(
+    return (
       <div class="container">
         <h2>Score-keeper</h2>
-        <my-groups></ my-groups>
+        <my-groups />
       </div>
-    )
+    );
   }
 }

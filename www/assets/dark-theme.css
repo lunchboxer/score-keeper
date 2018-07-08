@@ -1,0 +1,45 @@
+/* Include this stylesheet after Milligram or merge it with your main.css */
+
+body {
+    background: #000;
+    color: #f2f2f2;
+}
+
+.navigation .title, .navigation-title {
+    color: #f2f2f2;
+}
+
+.navigation {
+    background: #34373C;
+    border-bottom: .1rem solid #1B1C1D;
+}
+
+.header {
+    background-color: #141518;
+}
+
+pre {
+    background: #141518;
+}
+
+.prettyprint {
+    color: #f2f2f2;
+}
+
+.prettyprint.lang-md * {
+    color: #f2f2f2 !important;
+}
+
+code {
+    background: #141518;
+}
+
+.prettyprint .atv {
+    color: rgba(73, 158, 223, 1);
+}
+td {
+  border-bottom-color: #111;
+}
+th {
+  border-bottom-color: #444;
+}

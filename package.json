@@ -1,5 +1,5 @@
 {
-  "name": "Score-keeper",
+  "name": "score-keeper",
   "private": true,
   "version": "0.2.0",
   "description": "an interactive scoreboard for the classroom",
@@ -13,8 +13,9 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next",
-    "@stencil/router": "latest"
+    "@stencil/core": "0.9.11",
+    "@stencil/router": "latest",
+    "@stencil/sass": "0.0.5"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
